@@ -1,0 +1,64 @@
+.hero
+  padding: 50px 0
+  &-block
+    display: flex
+  &-image 
+   margin-right: -40px
+  &-text
+    flex-basis: 50%
+    padding-right: 139px
+    &__titele
+      font-size: 41px
+      font-weight: 400
+      line-height: 55px
+      margin-bottom: 40px
+    &__subtitele
+      font-size: 20px
+      font-weight: 400
+      
+  &-list
+    margin: 0
+    padding: 0
+    margin-top: 69px
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+    &__image
+      margin-right: 30px
+    &__text
+      flex-basis: 69%
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+    &__list
+      margin-bottom: 44px
+    &__text
+      padding-right: 0
+@media (max-width: 768px)  
+  .hero
+    &-text
+      &__titele 
+        font-size: 24px 
+        line-height: 1.4
+        margin-bottom: 15px
+      &__subtitele
+        font-size: 16px     
+    &-list
+      margin-top: 28px
+      &__item
+        margin-bottom: 20px
+      &__text
+        font-size:  12px
+      &__image
+        margin-right: 15px
+    
+      
+
+
+
+     
+      
+      
+      
