@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light' sans-serif;
 }
 
 img {
@@ -72,6 +72,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 13px;
 }
 
 .navbar__button {
@@ -87,6 +88,8 @@ img {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
+  font-size: 20px;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -103,7 +106,7 @@ img {
 }
 
 .hero {
-  padding: 50px 0;
+  padding: 51px 0;
   background: #f5f5f5;
 }
 
@@ -118,27 +121,29 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-right: 139px;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-right: 110px;
 }
 
 .hero-text__titele {
   font-size: 41px;
-  font-weight: 400;
   line-height: 55px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .hero-text__subtitele {
+  display: inline-block;
   font-size: 20px;
-  font-weight: 400;
+  line-height: 65px;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .hero-list {
   margin: 0;
   padding: 0;
-  margin-top: 69px;
+  margin-top: 49px;
 }
 
 .hero-list__item {
@@ -156,8 +161,8 @@ img {
 }
 
 .hero-list__text {
-  -ms-flex-preferred-size: 69%;
-      flex-basis: 69%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 @media (max-width: 1200px) {
