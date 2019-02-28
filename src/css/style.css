@@ -24,6 +24,13 @@ img {
   }
 }
 
+@media (max-width: 380px) {
+  .container {
+    max-width: 250px;
+    width: 90%;
+  }
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
@@ -97,6 +104,7 @@ img {
 
 .hero {
   padding: 50px 0;
+  background: #f5f5f5;
 }
 
 .hero-block {
