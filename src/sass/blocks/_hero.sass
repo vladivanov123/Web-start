@@ -6,10 +6,8 @@
     justify-content: space-between
   &-image 
     display: flex
-    // margin-right: -40px
-    justify-content: flex-end
   &-text
-    flex-basis: 45%
+    flex-basis: 50%
     margin-right: 110px
     &__titele
       font-size: 41px
@@ -59,7 +57,33 @@
         font-size:  12px
       &__image
         margin-right: 15px
-
+@media (max-width: 600px) 
+  .hero
+    padding: 0
+    &-image
+      width: 270px
+      height: 231px 
+    &-text
+      flex-basis: 100%
+      margin: 0
+      &__titele 
+        font-size: 20px 
+        line-height: 1.4
+        margin-bottom: 15px
+        margin-top: 46px
+      &__subtitele
+        font-size: 16px 
+        line-height: 1.4    
+    &-list
+      margin-top: 28px
+      
+      &__item
+        margin-bottom: 20px
+      &__text
+        font-size:  12px
+        flex-basis: 100%
+      &__image
+        margin-right: 15px
     
       
 

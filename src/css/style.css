@@ -87,7 +87,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 9px;
   display: inline-block;
   font-size: 20px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -124,14 +124,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin-right: 110px;
 }
 
@@ -210,5 +207,60 @@ img {
   .hero-list__image {
     margin-right: 15px;
   }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 0;
+  }
+  .hero-image {
+    width: 270px;
+    height: 231px;
+  }
+  .hero-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+  }
+  .hero-text__titele {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    margin-top: 46px;
+  }
+  .hero-text__subtitele {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .hero-list {
+    margin-top: 28px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
