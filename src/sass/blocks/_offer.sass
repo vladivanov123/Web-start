@@ -1,0 +1,70 @@
+.offer
+  background: url('../img/offer/offer-bg.jpg') no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  padding: 84px 0px 92px 0
+  &:before
+    content: ''
+    width: 50%
+    height: 100% 
+    position: absolute
+    top: 0 
+    left: 0
+    background: #fff
+  &-block
+    width: 50%
+    padding-right: 80px
+    position: relative
+  &__titele
+    max-width: 360px
+    margin-bottom: 24px
+    line-height: 35px
+    font-family: 'Museo Sans Bold', sans-serif
+  &__subtitele
+    display: block
+    max-width: 250px
+    margin-bottom: 30px
+  &__input
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 19px
+  &__button
+    width: 100%
+    min-height: 70px 
+  &-feedback
+    padding-top: 30px
+    display: flex
+  &__feedbacktext
+    margin-right: 85px;
+    width: 46%;
+    font-size: 15px
+    line-height: 24px
+  &__feedbacktext2
+    font-size: 15px
+    display: flex
+  &__phone
+    margin-top: 11px
+    color: $text-color
+    font-size: 15px
+    text-decoration: none
+    display: inline-block
+    font-family: 'Museo Sans Bold', sans-serif
+      
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 13px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
+ 
+    
