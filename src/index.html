@@ -18,11 +18,11 @@
         <!-- /.navbar__logo -->
         <div class="navbar__info">
           <div class="navbar__contacts">
-            <strong class="navbar__address">Калуга, Москва, МО </strong>
+            <span class="navbar__address">Калуга, Москва, МО </span>
             <a href="tel:+7 (495) 42-251-31" class="navbar__phone"><strong>+7 (495) 42-251-31</strong></a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button">
+          <button class="button navbar__button" id="button">
             <strong>Перезваните мне</strong>
           </button> <!-- /.button navbar__button -->
         </div>
@@ -125,5 +125,16 @@
     </section>
     <!-- /.offer -->
   </main>
+
+  <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__titele">Всплывющее окно </h4>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/main.js"></script>
 </body>
 </html>
