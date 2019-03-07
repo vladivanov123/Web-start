@@ -1,0 +1,54 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+.contacts
+  flex-basis: 50%
+  padding-top: 100px
+  padding-left: 200px
+  &__titele
+    font-weight: 600
+    font-size: 22px
+    line-height: 1.4
+    width: 293px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list
+    list-style: none
+    padding: 0
+    line-height: 1.4
+    &__icon
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+      margin-right: 23px
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 30px
+    &__phone
+      color: $text-color
+      font-size: 15px
+      text-decoration: none
+      font-weight: 600
+      display: inline-block
+@media (max-width: 768px)   
+  .map
+    position: relative
+    width: 100%
+  .contacts
+    flex-basis: 100%
+    padding: 0
+    padding-left: 24px
+    &__titele
+      margin-top: 67px
+      font-size: 18px
+      width: 281px;
+    &__list
+      &__text
+        font-size: 16px
