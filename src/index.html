@@ -101,9 +101,9 @@
                 бесплатного дизайн-проекта!
               </span>
               <!-- /.section-subtitel -->
-            <form class="form offer__form">
-              <input type="text" class="input offer__input" placeholder="Ваше имя">
-              <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+            <form class="form offer__form" id="offer-form">
+              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
               <button class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>
             <div class="offer-feedback">
@@ -458,7 +458,8 @@
         rules: {
           username: {
             required: true,
-            minlength: 2
+            minlength: 2,
+            maxlength: 15
           },
           phone: {
             required: true,
@@ -472,7 +473,8 @@
           messages: {
               username: {
               required: "Пожалуйста введите имя",
-              minlength: jQuery.validator.format("Минемум  {0} символа")
+              minlength: jQuery.validator.format("Минимум  {0} символа"),
+              maxlength: jQuery.validator.format("Максимум {0} символов")
           },
           email: "Введите ваш email",
           phone: {
@@ -480,6 +482,31 @@
             minlength: jQuery.validator.format ("")
           }
 
+        }
+      });
+
+      $('#offer-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          phone: {
+            required: true,
+            minlength: 13
+          }
+        },
+          messages: {
+              username: {
+              required: "Пожалуйста введите имя",
+              minlength: jQuery.validator.format("Минимум  {0} символа"),
+              maxlength: jQuery.validator.format("Максимум {0} символов")
+          },
+          phone: {
+            required: "Пожалуйста введите ваш телефон",
+            minlength: jQuery.validator.format ("")
+          }
         }
       });
       // Маска для телефона

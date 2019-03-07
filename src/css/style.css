@@ -72,6 +72,13 @@ img {
   cursor: pointer;
 }
 
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
 .navbar {
   padding: 8px 0;
 }
