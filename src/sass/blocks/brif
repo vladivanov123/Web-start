@@ -1,21 +1,26 @@
-.brif
-  background-image: url('../img/brif/prif-bg.png'), url('../img/brif/prif-bg-2.jpg')
+background-image: url('../img/brif/prif-bg.png'), url('../img/brif/prif-bg-2.jpg')
   background-position: left center,  center right
   background-size: 50%, contain
   background-repeat: repeat-y, no-repeat
-  height: 750px
   &-block
     display: flex
+    height: 750px
   &__interview
     flex-basis: 50%
   &__form
     flex-basis: 50%
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    
     padding-left: 200px
     text-align: center
   &__input
+    
     width: 100%
     max-width: 370px
-    // min-width: 370px
+    min-width: 370px
     margin-bottom: 15px
   &__button
     height: 70px
@@ -28,23 +33,22 @@
   &__titele
     font-size: 22px
     margin-bottom: 50px
+    // width: 515px
     margin-top: 106px
   &__subtitele
     display: block
-    margin-bottom: 95px
     font-size: 16px
+    margin-bottom: 95px
   &-list
     list-style: none
     padding: 0
-    margin-bottom: 109px
+    font-weight: 600
     &__item
       display: flex
-      align-items: center
+      text-align: center
       margin-bottom: 25px
-      font-weight: 600
     &__counter
       display: inline-block
-      text-align: center
       margin-right: 30px
       border-radius: 50%
       line-height: 35px
@@ -54,25 +58,28 @@
       border: 2px solid $text-color
     &__text
       max-width: 400px
+      text-align: left
 .form
-  display: flex
-  flex-direction: column
-  align-items: center
-  text-align: center
   &__titele
     font-size: 22px
     margin-bottom: 50px
-    margin-top: 106px       
+    // width: 515px
+    margin-top: 106px
   &__subtitele
     display: block
     font-size: 16px
-    margin-bottom: 30px
+    margin-bottom: 40px
   &__description
     display: block
+    margin-bottom: 90px
+  // &__input
+  //   max-width: 370px
+  //   margin: auto
+
 @media (max-width: 1200px)
   .brif
     &__form
-      padding-left: 80px
+      padding-left: 30px
   .interview
     padding-right: 30px
     &__titele
@@ -92,7 +99,7 @@
       margin-bottom: 15px
     &__subtitele
       margin-bottom: 30px
-@media (max-width: 780px)
+@media (max-width: 768px)
   .brif
     background-image: url('../img/brif/prif-bg.png'), url('../img/brif/prif-bg-2.jpg')
     background-position: top center,  center bottom
@@ -101,4 +108,4 @@
     &-block
       flex-direction: column
     &__form
-      margin-top: 80px 
+      margin-top: 80px

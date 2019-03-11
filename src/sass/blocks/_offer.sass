@@ -27,7 +27,7 @@
     margin-bottom: 30px
   &__input
     margin-bottom: 30px
-    width: 240px
+    max-width: 240px
     &:first-child
       margin-right: 19px
   &__button
@@ -52,23 +52,61 @@
     font-weight: 600
     display: inline-block
     font-family: 'Museo Sans Bold', sans-serif
-      
+  &__forminput
+    width: 100%;
+    // display: flex
+    // width: 400px
+// .error
+//   position: absolute
+//   left: -10px
+
+
+  
 @media (max-width: 1200px)
   .offer
     background-size: cover
-    &__input
+    &-feedback
+      display: block
+    &__feedbacktext
+      margin-bottom: 18px
       width: 100%
+      font-size: 15px
+      line-height: 24px
+      width: 220px
+    &__input
+      min-width: 100%
       margin-bottom: 10px
+      &:first-child
+        margin-right: 0
     &__button
       font-size: 13px
+      padding: 19px 55px
 @media (max-width: 768px)
   .offer
     background: #fff
+    &__input
+      min-width: 100%
+    &-feedback
+      display: flex
     &-block
       width: 100%
       padding-right: 0
+@media (max-width: 511px)
+   .offer
+    &-feedback
+      display: block
 @media (max-width:380px)
   .offer
+    padding-top: 0
+    padding-bottom: 56px
+    &__titele
+      margin-top: 53px
+      margin-bottom: 20px
+      font-size: 18px
+      line-height: 1.2
+    &__subtitele
+      font-size: 14px
+      margin-bottom: 27px
     &-feedback
       display: block
     &__feedbacktext
@@ -76,3 +114,10 @@
       width: 100%
       font-size: 15px
       line-height: 24px  
+    &__input
+      min-width: 275px
+      height: 65px
+    &__button
+      font-size: 14px
+      padding: 19px 55px
+        

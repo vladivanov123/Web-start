@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52709095, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52709095" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52709095, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52709095" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+  <!-- Певый блок -->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -37,6 +39,7 @@
   </nav>
   <!-- /.navbar -->
 
+ <!-- Второй блок hero -->
   <main>
     <section class="hero">
       <div class="container">
@@ -88,6 +91,7 @@
     </section>
     <!-- /.hero -->
 
+<!-- Третий блок Offer  -->
     <section class="offer section">
       <div class="container">
         <div class="offer-block">
@@ -103,8 +107,11 @@
               </span>
               <!-- /.section-subtitel -->
             <form class="form offer__form" id="offer-form">
-              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-              <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+              <div class="offer__forminput">
+
+                <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+                <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+              </div>
               <button class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>
             <div class="offer-feedback">
@@ -128,11 +135,13 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+
+<!-- Четвертый блок портфолио -->
     <section class="section portfolio">
       <div class="container">
         <h2 class="section-titele portfolio__titele bounce delay-0.4s wow zoomIn">
           Работая с 2007 года,
-          мы сделали более 500 ремонтов в квартирах и домах           
+          мы&nbsp;сделали более 500 ремонтов в квартирах и домах           
         </h2>
         <div class="slider">
           <div class="slider__item"><img class="card__photo slider__img" src="img/portfolio/slider-1.jpg" alt=""></div>
@@ -156,7 +165,7 @@
     </section>
     <!-- /.section portfolio -->
 
-
+<!-- пятый блок price -->
     <section class="section price">
       <div class="container price__container">
         <h2 class="section-titele price__titele wow tada">
@@ -167,7 +176,7 @@
         <span class="section-subtitele price__subtitele">Прайс на наши услуги</span>
         <!-- /.section-subtitle price__subtitle -->
         <div class="cards price__cards">
-          <div class="card price__card wow fadeInUp" data-wow-delay= "0.1s"  data-wow-duration="1.5s">
+          <div class="card price__card wow fadeInUp" data-wow-delay= "0.1s"  >
             <div class="card__image"><img class="card__photo" src="img/price/room-1.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -247,6 +256,8 @@
     </section>
     <!-- /.section price -->
 
+    <!-- шестой блок шаги -->
+
     <section class="section steps">
       <div class="container">
         <h2 class="section-titele steps__titele">
@@ -316,35 +327,78 @@
       <!-- /.container -->
     </section>
     <!-- /.section steps --> 
+
+    <section class="section marketing">
+      <div class="container">
+          <div class="marketing__text">
+              <span class="marketing__titele">
+                Ремонт обойдется Вам дешевле, так как 
+                  мы используем качественные материалы по оптовым ценам
+              </span>
+            </div>
+      </div>
+    </section>
     
+    <section class="section choice">
+      <div class="container">
+        <div class="choice-block">
+          <div class="choice__column">
+            <span class="choice__text">
+                Поможем закупить все материалы 
+                по оптовым ценам у проверенных поставщиков                
+            </span>
+            <img src="img/choice/photo-1.png" alt="" class="choice__photo">
+          </div>
+          <div class="choice__column">
+              <span class="choice__text">
+                  Мы дадим Вам <span class="choice__bold">максимальные скидки</span>
+                  у наших партнеров для закупки материалов оптом                  
+              </span>
+              <img src="img/choice/photo-2.png" alt="" class="choice__photo">
+          </div>
+          <div class="choice__column">
+              <span class="choice__text">
+                  Все, что не сможете найти в городе -
+                  поможем заказать <span class="choice__bold">у проверенных поставщиков</span>                  
+              </span>
+              <img src="img/choice/photo-3.png" alt="" class="choice__photo">
+          </div>
+        </div>
+        <!-- /.choice-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section choice -->
+
+<!-- седьмой блок brif -->
 
     <section class="section brif">
       <div class="container">
         <div class="brif-block">
-          <div class="intrview brif__intarview">
-            <h3 class="intrview__titele">
+          <div class="interview brif__interview">            
+            <h3 class="interview__titele">
               Мы можем озвучить Вам примерную стоимость
               работы и материалов по телефону
             </h3>
-            <span class="intrview__subtitele">
+            <span class="interview__subtitele">
                 Для этого нужно ответить на 4 вопроса:
             </span>
-            <ul class="intrview-list">
-              <li class="intrview-list__item">
-                <span class="intrview-list__counter">1.</span>
-                <span class="intrview-list__text">Какова площадь помещения?</span>
+            <ul class="interview-list">
+              <li class="interview-list__item">
+                <span class="interview-list__counter">1.</span>
+                <span class="interview-list__text">Какова площадь помещения?</span>
               </li>
-              <li class="intrview-list__item">
-                <span class="intrview-list__counter">2.</span>
-                <span class="intrview-list__text">У Вас новостройка или вторичное жилье?</span>
+              <li class="interview-list__item">
+                <span class="interview-list__counter">2.</span>
+                <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span>
               </li>
-              <li class="intrview-list__item">
-                <span class="intrview-list__counter">3.</span>
-                <span class="intrview-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
+              <li class="interview-list__item">
+                <span class="interview-list__counter">3.</span>
+                <span class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
               </li>
-              <li class="intrview-list__item">
-                <span class="intrview-list__counter">4.</span>
-                <span class="intrview-list__text">Назначение помещения?</span>
+              <li class="interview-list__item">
+                <span class="interview-list__counter">4.</span>
+                <span class="interview-list__text">Назначение помещения?</span>
               </li>
             </ul>
           </div>
@@ -376,6 +430,8 @@
     </section>
     <!-- /.section brif -->
   </main>
+
+<!-- Футер -->
 
   <footer class="footer">
     <div class="map" id="map">
