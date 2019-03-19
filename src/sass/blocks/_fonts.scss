@@ -6,25 +6,19 @@
   url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
   }
 @font-face {
-  font-family: 'Museo Sans Bold Italic';
+  font-family: 'Museo Sans Bold';
   src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700Italic.eot');
   src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700Italic.eot?#iefix') format('embedded-opentype'),
   url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700Italic.woff') format('woff'),
   url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
   }
-@font-face {
-  font-family: 'Proxima Nova Black';
-  src: url('../fonts/ProximaNova/ProximaNova-Black.eot');
-  src: url('../fonts/ProximaNova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/ProximaNova/ProximaNova-Black.woff') format('woff'),
-  url('../fonts/ProximaNova/ProximaNova-Black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  }
+
 // @mixin reg {
 //   font-family: 'Museo Sans Light' sans-serif;
 //   font-weight: 300;

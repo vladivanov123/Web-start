@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Yandex.Metrika counter --> 
-  <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52709095, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52709095" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <link rel="icon" href="img/icon.png" >
+ 
 </head>
-<body>
+<body> 
+  <!-- Yandex.Metrika counter --> 
+  <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52709095, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52709095" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <!-- Певый блок -->
   <nav class="navbar">
     <div class="container">
@@ -28,7 +27,7 @@
           </div>
           <!-- /.navbar__contacts -->
           <button class="button navbar__button" onclick="ym(52709095, 'reachGoal', 'button'); return true;" value="Заказать" id="button">
-            Перезваните мне
+              Перезвоните мне
           </button> <!-- /.button navbar__button -->
         </div>
         <!-- /.navbar__info -->
@@ -45,8 +44,8 @@
       <div class="container">
         <div class="hero-block">
           <div class="hero-text">
-            <h1 class="hero-text__titele  ">
-                <!-- wow fadeInLeft" data-wow-duration="1.5s -->
+            <h1 class="hero-text__titele  wow fadeInLeft" data-wow-duration="1.5s ">
+              
               Внутренняя отделка 
                 помещений "под&nbsp;ключ"
             </h1>
@@ -82,7 +81,7 @@
           </div>
           <!-- /.hero-list -->
           <div class="hero-image">
-            <img class="card__photo" src="img/hero/hero-image.png" alt="фото квартиры">
+            <img class="hero__photo" src="img/hero/hero-image.png" alt="фото квартиры">
           </div>
         </div>
         <!-- /.hero-block -->
@@ -107,10 +106,13 @@
               </span>
               <!-- /.section-subtitel -->
             <form class="form offer__form" id="offer-form">
-              <div class="offer__forminput">
-
-                <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-                <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+              <div class="offer__forminputs">
+                <div class="forminput">
+                  <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+                </div>
+                <div class="forminput">
+                  <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
+                </div>
               </div>
               <button class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>
@@ -169,7 +171,8 @@
     <section class="section price">
       <div class="container price__container">
         <h2 class="section-titele price__titele wow tada">
-          У нас очень гибкая система скидок
+          У нас очень гибкая система&nbsp;скидок
+          
             на комплексные работы!
         </h2>
         <!-- /.section-title price__title -->
@@ -182,7 +185,7 @@
             <div class="card__text">
               <h4 class="card__titele">Ремонт ванных комнат и с/у</h4>
               <!-- /.card__titele -->
-              <a href="#" class="card__link">Узнать Цены</a>
+              <span href="#" class="card__link" id="link">Узнать Цены</span>
               <!-- /.card__link --> 
             </div>
             <!-- /.card__text -->
@@ -194,7 +197,7 @@
             <div class="card__text">
               <h4 class="card__titele">Ремонт комнат и квартир</h4>
               <!-- /.card__titele -->
-              <a href="#" class="card__link">Узнать Цены</a>
+              <span href="#" class="card__link" id="link1">Узнать Цены</span>
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
@@ -206,7 +209,7 @@
             <div class="card__text">
               <h4 class="card__titele">Отделка офисных помещений</h4>
               <!-- /.card__titele -->
-              <a href="#" class="card__link">Узнать Цены</a>
+              <span href="#" class="card__link" id="link2">Узнать Цены</span>
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
@@ -218,7 +221,7 @@
             <div class="card__text">
               <h4 class="card__titele">Ремонт в новостройках</h4>
               <!-- /.card__titele -->
-              <a href="#" class="card__link">Узнать Цены</a>
+              <span href="#" class="card__link" id="link3">Узнать Цены</span>
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
@@ -230,7 +233,7 @@
             <div class="card__text">
               <h4 class="card__titele">Ремонт кухонь</h4>
               <!-- /.card__titele -->
-              <a href="#" class="card__link">Узнать Цены</a>
+              <span href="#" class="card__link" id="link4">Узнать Цены</span>
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
@@ -242,7 +245,7 @@
             <div class="card__text">
               <h4 class="card__titele">Ремонт дач и коттеджей</h4>
               <!-- /.card__titele -->
-              <a href="#" class="card__link">Узнать Цены</a>
+              <span href="#" class="card__link"  id="link5">Узнать Цены</span>
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
@@ -261,7 +264,8 @@
     <section class="section steps">
       <div class="container">
         <h2 class="section-titele steps__titele">
-          Наши специалисты готовы выехать на замер
+          Наши специалисты готовы выехать на&nbsp;замер
+          
           в любое удобное для Вас время
         </h2>
         <!-- /.section-titele steps__titele -->
@@ -275,6 +279,7 @@
             <!-- /.step__img -->
             <p class="step__text">
               Вы звоните нам
+              <br>
               или оставляете заявку
             </p>
           </div>
@@ -294,7 +299,7 @@
               <img src="img/staps/maney.png" alt="">
             </div>
             <!-- /.step__img -->
-            <p class="step__text">
+            <p class="step__text therd">
               Рассчитываем смету
               согласовываем
               с Вами                
@@ -328,40 +333,38 @@
     </section>
     <!-- /.section steps --> 
 
-    <section class="section marketing">
-      <div class="container">
-          <div class="marketing__text">
-              <span class="marketing__titele">
-                Ремонт обойдется Вам дешевле, так как 
-                  мы используем качественные материалы по оптовым ценам
-              </span>
-            </div>
-      </div>
-    </section>
+    
     
     <section class="section choice">
-      <div class="container">
+        <div class="marketing__text">
+            <h3 class="marketing__titele">
+                Ремонт обойдется Вам дешевле, так как 
+               
+                  мы используем&nbsp;качественные материалы по оптовым ценам
+            </h3>
+        </div>
+        <div class="container">
         <div class="choice-block">
-          <div class="choice__column">
-            <span class="choice__text">
+          <div class="choice__column choice__column1 ">
+            <p class="choice__text ">
                 Поможем закупить все материалы 
                 по оптовым ценам у проверенных поставщиков                
-            </span>
-            <img src="img/choice/photo-1.png" alt="" class="choice__photo">
+            </p>
+            <!-- <img src="img/choice/photo-1.png" alt="" class="choice__photo"> -->
           </div>
-          <div class="choice__column">
-              <span class="choice__text">
+          <div class="choice__column choice__column2 ">
+              <p class="choice__text">
                   Мы дадим Вам <span class="choice__bold">максимальные скидки</span>
                   у наших партнеров для закупки материалов оптом                  
-              </span>
-              <img src="img/choice/photo-2.png" alt="" class="choice__photo">
+              </p>
+              <!-- <img src="img/choice/photo-2.png" alt="" class="choice__photo2 "> -->
           </div>
-          <div class="choice__column">
-              <span class="choice__text">
+          <div class="choice__column choice__column3 ">
+              <p class="choice__text">
                   Все, что не сможете найти в городе -
                   поможем заказать <span class="choice__bold">у проверенных поставщиков</span>                  
-              </span>
-              <img src="img/choice/photo-3.png" alt="" class="choice__photo">
+              </p>
+              <!-- <img src="img/choice/photo-3.png" alt="" class="choice__photo"> -->
           </div>
         </div>
         <!-- /.choice-block -->
@@ -390,11 +393,11 @@
               </li>
               <li class="interview-list__item">
                 <span class="interview-list__counter">2.</span>
-                <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span>
+                <span class="interview-list__text second">У Вас новостройка или вторичное жилье?</span>
               </li>
               <li class="interview-list__item">
                 <span class="interview-list__counter">3.</span>
-                <span class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
+                <span class="interview-list__text third">Где находится помещение, в котором будет производиться ремонт?</span>
               </li>
               <li class="interview-list__item">
                 <span class="interview-list__counter">4.</span>
@@ -434,16 +437,15 @@
 <!-- Футер -->
 
   <footer class="footer">
-    <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async 
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af4627cc23972680c931b8d75639f809b355262c4ca14c531c7241c78c0e20cf8&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=folse"></script>
+    <div  id="map">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8835.969155940506!2d37.313640116356446!3d55.82582475765771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b546f2fd74a4fb%3A0xe56e09b794f43fd4!2z0YPQuy4g0JvQtdC90LjQvdCwLCAxMCwgMzA4LCDQmtGA0LDRgdC90L7Qs9C-0YDRgdC6LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDE0MzQwNA!5e0!3m2!1sru!2sby!4v1552845933434" ></iframe>
     </div>
     <div class="container">
       <div class="contacts-block">
         <div class="contacts">
           <h3 class="contacts__titele">
             Приезжайте к нам в гости!
-            Проконсультируем Вас 
+            Проконсультируем Вас <br>
             по всем вопросам ремонта
           </h3>
           <ul class="contacts-list">
@@ -507,8 +509,12 @@
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script>
+    
     new WOW().init();
     $(document).ready(function(){
+      
+      // $('#map').behavior.MultiTouch({disable});
+      
         // Валидация для формы
       $('#brif-form').validate({
         rules: {

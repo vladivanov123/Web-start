@@ -2,10 +2,11 @@
   background: $main-background-color url('../img/portfolio/portfolio-bg.jpg') repeat-y center left
   background-size: 50%
   &__titele 
-    font-size: 24px
+    font-size: 30px
+    line-height: 45px
     font-family: 'Museo Sans Bold', sans-serif
     text-align: center
-    max-width: 500px
+    max-width: 804px
     margin: auto
     margin-bottom: 100px
     padding-top: 100px
@@ -24,10 +25,22 @@
     margin: auto
 
 @media (max-width: 768px)
+  .portfolio
+    &__titele
+      margin-bottom: 75px
+      padding-top: 75px
+      font-size: 26px
+      ine-height: 40px
   .card
     &__photo
       margin: auto
-
+@media (max-width: 585px)
+  .portfolio
+    &__titele 
+      margin-bottom: 40px
+      padding-top: 45px
+      font-size: 18px
+      line-height: 38px
 @media (max-width: 380px)
   .portfolio
     padding-top: 43px
@@ -36,6 +49,8 @@
       padding-top: 0
       margin-bottom: 41px
       font-size: 18px
+      line-height: 24px 
+         
     &__arrows
       margin-top: 46px
-      padding-bottom: 64px
+      padding-bottom: 35px

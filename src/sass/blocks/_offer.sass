@@ -4,6 +4,7 @@
   background-size: contain
   position: relative
   padding: 84px 0px 92px 0
+  height: 632px
   &:before
     content: ''
     width: 50%
@@ -20,24 +21,26 @@
     max-width: 360px
     margin-bottom: 24px
     line-height: 35px
-    font-family: 'Proxima Nova Black'
+    font-weight: 700
+    // font-family: 'Museo Sans Bold' 
   &__subtitele
     display: block
     max-width: 250px
     margin-bottom: 30px
   &__input
     margin-bottom: 30px
-    max-width: 240px
+    width: 240px
     &:first-child
-      margin-right: 19px
+      margin-right: 18px
   &__button
     width: 100%
+    max-width: 495px
     min-height: 70px 
   &-feedback
     padding-top: 30px
     display: flex
   &__feedbacktext
-    margin-right: 85px;
+    margin-right: 80px;
     width: 46%;
     font-size: 15px
     line-height: 24px
@@ -52,9 +55,9 @@
     font-weight: 600
     display: inline-block
     font-family: 'Museo Sans Bold', sans-serif
-  &__forminput
+  &__forminputs
     width: 100%;
-    // display: flex
+    display: flex
     // width: 400px
 // .error
 //   position: absolute
@@ -64,7 +67,9 @@
   
 @media (max-width: 1200px)
   .offer
+    padding: 45px 0px 92px 0
     background-size: cover
+    height: 700px
     &-feedback
       display: block
     &__feedbacktext
@@ -81,6 +86,8 @@
     &__button
       font-size: 13px
       padding: 19px 55px
+    &__forminputs
+      display: block
 @media (max-width: 768px)
   .offer
     background: #fff
@@ -91,12 +98,17 @@
     &-block
       width: 100%
       padding-right: 0
+    &__button
+      width: 100%
+      max-width: 580px
+      min-height: 70px 
 @media (max-width: 511px)
    .offer
     &-feedback
       display: block
 @media (max-width:380px)
   .offer
+    height: 565px
     padding-top: 0
     padding-bottom: 56px
     &__titele
@@ -108,8 +120,10 @@
       font-size: 14px
       margin-bottom: 27px
     &-feedback
+      padding-top: 14px
       display: block
     &__feedbacktext
+
       margin-bottom: 18px
       width: 100%
       font-size: 15px

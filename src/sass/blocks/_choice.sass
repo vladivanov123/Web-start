@@ -1,3 +1,13 @@
+.marketing
+  &__text
+    height: 280px
+    background-color: #ffc000
+    max-width: 100%
+  &__titele
+    margin-top: 100px
+    font-size: 32px
+    max-width: 932px
+    margin: auto
 .choice
   &-block
     display: flex
@@ -7,21 +17,20 @@
   &__column
     width: 370px
     height: 410px
-    background-color: #f7f7f7
-    margin-right: 30px
-    align-items: flex-end
-    
-  &__photo
-    display: flex
-    // padding-top: 109px;
+    margin-right: 30px  
+  &__column1
+    background-image: url('../img/choice/photo-1-min.jpg') 
+  &__column2
+    background-image: url('../img/choice/photo-2-min.jpg')
+  &__column3
+    background-image: url('../img/choice/photo-3-min.jpg')  
   &__text
-    
     display: block
     width: 322px;
     padding-top: 27px
     padding-left: 26px
   &__bold
-    font-weight: 600
+    font-weight: 700
 @media (max-width: 1200px)    
   .choice
     &-block
@@ -44,6 +53,10 @@
       &:first-child
         margin: auto
         margin-bottom: 31px
+  .marketing
+    &__titele
+      font-size: 24px
+      
 @media (max-width: 420px)
   .choice
     &-block
@@ -56,3 +69,35 @@
     &__text
       width: 254px;
       font-size: 12px
+  .marketing
+    &__text
+      height: 231px
+      background-color: #ffc000
+      max-width: 100%
+    &__titele
+      margin-top: 72px
+      font-size: 18px
+      max-width: 932px
+      margin: auto
+@media (max-width: 380px)
+  .choice
+    &-block
+      flex-direction: column
+      margin-top: 60px
+      margin-bottom: 30px
+    &__column
+      width: 272px
+      height: 300px 
+    &__text
+      width: 254px;
+      font-size: 12px
+  .marketing
+    &__text
+      height: 231px
+      background-color: #ffc000
+      max-width: 100%
+    &__titele
+      margin-top: 72px
+      font-size: 18px
+      max-width: 270px
+      margin: auto
